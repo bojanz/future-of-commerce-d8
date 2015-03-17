@@ -55,7 +55,7 @@
       <div class="slides">
         <section>
           <h1>The Future of Commerce</h1>
-          <h2>Drupal Camp Novi Sad</h2>
+          <h2>European Drupal Days 2015</h2>
           <p>
             <small>
               Presented by Bojan Zivanovic / <a href="http://twitter.com/bojan_zivanovic">@bojan_zivanovic</a>
@@ -136,7 +136,7 @@
                 <h2>Relies on "essential contribs" and distributions to complete the experience</h2>
             </section>
             <section>
-              <h2>3 years since the first release...</h2>
+              <h2>3.5 years since the first release...</h2>
               <img src="assets/images/usage-stats.png" />
             </section>
           </section>
@@ -176,40 +176,49 @@
               <img src="assets/images/scratch.png" style="border:0" />
             </section>
             <section>
-              <h2>Hello, GitHub</h2>
-              <img src="assets/images/github.png" />
+              <img src="assets/images/umbrella.png" class="simple" />
             </section>
             <section>
-              <h2>Getting off the island</h2>
-              <img src="assets/images/ryan-boat.jpg" />
+              <h2>Libraries first</h2>
+              <img src="assets/images/libraries.png" class="simple" />
+            </section>
+            <section>
+              <h2>Hello, GitHub</h2>
+              <img src="assets/images/github.png" />
             </section>
         </section>
 
         <section>
           <section>
             <h2>Currency handling</h2>
-            <img src="assets/images/usd.png" />
-            <img src="assets/images/cldr.png" />
+            <img src="assets/images/booking.png" class="" />
           </section>
           <section>
             <h2>Currency formatting</h2>
-            <h3>12 345,99 €</h3>
-            <h3>12.345,99 €</h3>
-            <h3>€12,345.99</h3>
+            <h3 class="fragment">12 345,99 €</h3>
+            <h3 class="fragment">12.345,99 €</h3>
+            <h3 class="fragment">€12,345.99</h3>
+          </section>
+          <section>
+            <h2>Currency formatting</h2>
             <h3>د.إ.‏ ٩٩٩٫٩٩</h3>
+            <p>Different numbering systems!</p>
+          </section>
+          <section>
+            <h2>Where does the data come from?</h2>
+            <img src="assets/images/cldr.png" class="simple" />
+            <blockquote>
+            Provides the largest and most extensive standard repository of locale data available.
+            </blockquote>
           </section>
           <section>
             <img src="assets/images/intl.png" />
-          </section>
-          <section>
-            <h2>Coming soon to symfony/intl</h2>
-            <img src="assets/images/symfony.png" />
           </section>
         </section>
 
         <section>
           <section>
-            <h2>Build me an address form!</h2>
+            <h2>Addressing</h2>
             <img src="assets/images/address-form.png" />
           </section>
           <section>
@@ -223,63 +232,100 @@
             </ul>
           </section>
           <section>
+            <h2>Data model: Subdivision</h2>
+            <ul>
+              <li>Hierarchical, up to 3 levels</li>
+              <li>Multilingual user-facing name</li>
+              <li>Code (used on envelopes, e.g. CA for California)</li>
+              <li>Postal code validation pattern</li>
+            </ul>
+          </section>
+          <section>
             <img src="assets/images/addressing.png" />
           </section>
           <section>
             <img src="assets/images/trending-developer.png" />
           </section>
+          <section>
+            <img src="assets/images/address-module.png" />
+          </section>
         </section>
 
         <section>
           <section>
-            <h2>Territorial groupings (zones)</h2>
-            <img src="assets/images/europe-map.png" />
+            <img src="assets/images/zone.png" />
           </section>
           <section>
-            <h2>Yes, there's a library for that too</h2>
-            <img src="assets/images/zone.png" />
+            <h2>Territorial groupings</h2>
+            <ul>
+              <li>California and Nevada</li>
+              <li>European Union</li>
+              <li>Germany and a set of Austrian postal codes (6691, 6991, 6992, 6993)</li>
+              <li>Austria without specific postal codes (6691, 6991, 6992, 6993)</li>
+            </ul>
           </section>
         </section>
 
         <section>
           <section>
             <img src="assets/images/tax.jpg" />
-            <h3>What are my rates?</h3>
-            <h3>When do they apply?</h3>
           </section>
           <section>
-            <h2>What are my rates: 2015 VOES</h2>
+            <h2>Problem #1: What are my rates?</h2>
+            <img src="assets/images/europe-map.png" />
+          </section>
+          <section>
+            <h2>Problem #1.1: 2015 VOES</h2>
             <ul>
             <li>VAT on Electronically Supplied Services</li>
             <li>When selling a digital product, VAT is due at the place of the customer.</li>
             <li>From 2015 this applies to EVERYONE.</li>
+            </ul>
           </section>
           <section>
-            <h2>What are my rates: Percentages change</h2>
+            <h2>Problem #2: Percentages change</h2>
             <img src="assets/images/angela-merkel.jpg" />
           </section>
           <section>
-            <h2> When do they apply: tax zones</h2>
-            <p>German VAT applies to Germany and 5 Austrian postal codes.</p>
-            <p>Austrian VAT applies to Austria without those 5 postal codes.</p>
+            <h2> Problem #3: Tax zones</h2>
+            <p>German VAT is used in Germany and 5 Austrian postal codes.</p>
+            <p>Austrian VAT is used in Austria without those 5 postal codes.</p>
           </section>
           <section>
-            <h2>When do they apply: place of supply</h2>
+            <h2>Problem #4: Charging the correct rate</h2>
             <ul>
-              <li>Explicit </li>
-              <li>Based on company address</li>
-              <li>Based on customer address</li>
+              <li>B2B or B2C?</li>
+              <li>Physical or digital product?</li>
+              <li>Registered for tax in additional countries?</li>
+              <li>Place of supply</li>
             </ul>
           </section>
-          <section class="shadowh2" data-background="assets/images/cg-tax.png">
-            <h2>commerceguys/tax</h2>
+          <section>
+            <img src="assets/images/tax.png" />
           </section>
         </section>
 
         <section>
           <section>
-            <h2>We need a new payment API / library </h2>
-            <img src="assets/images/omnipay.png" />
+            <h2>Pricing</h2>
+            <img src="assets/images/pricing.png" />
+          </section>
+          <section>
+            <h2>PHP has no support for decimal numbers</h2>
+            <h3> 2.99, 3.4, 6.78 -> floats, not decimals! </h3>
+          </section>
+          <section>
+            <h2>bcmath + API on top</h2>
+            <img src="assets/images/pricing-code.png" />
+          </section>
+          <section>
+            <h2>Next steps</h2>
+            <ul>
+              <li>ComplexPrice (base w/ taxes, discounts, fees)</li>
+              <li>Calculators</li>
+            </ul>
+              <br /><br /><p>Focusing on the interaction between taxes and discounts</p>
+            </ul>
           </section>
         </section>
 
@@ -293,9 +339,22 @@
             <img src="assets/images/product-tree.png" />
           </section>
           <section>
+            <h3>Improved Order Workflows</h3>
+            <img src="assets/images/workflow.png" style="border:0; padding: 15px;" />
+          </section>
+          <section>
             <h2>Improved Checkout UX</h2>
             <img src="assets/images/amazon.png" />
             <img src="assets/images/A-B.jpg" />
+          </section>
+          <section>
+            <h2>Payments</h2>
+            <pre><code>// no code yet.</code></pre>
+            <ul>
+              <li>Expanded API and UI (authorizations, refunds)</li>
+              <li>Built-in tokenization (ex. commerce_cardonfile)</li>
+              <li>Concept of modes: Live/Sandbox</li>
+            </ul>
           </section>
           <section>
             <h2>Discounts in core</h2>
@@ -310,11 +369,12 @@
         <section>
           <h2>The heroes</h2>
           <ul>
-            <li>Jelle Bekker (jbekker) - 28</li>
-            <li>Pedro Cambra (pcambra) - 12</li>
-            <li>Josh Taylor (joshtau) - 10</li>
+            <li>Jelle Bekker (jbekker) - 39</li>
+            <li>Josh Taylor (joshtau) - 33</li>
+            <li>Pedro Cambra (pcambra) - 30</li>
             <li>Matt Glaman (mglaman) - 6</li>
             <li>Andy Giles (andyg5000) - 1</li>
+            <li>Jakob Torp (googletorp) - 1</li>
           </ul>
         </section>
 
